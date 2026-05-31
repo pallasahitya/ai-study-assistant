@@ -8,7 +8,6 @@ import fitz
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 app = FastAPI()
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -16,8 +15,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 pdf_text = ""
