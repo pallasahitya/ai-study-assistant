@@ -83,4 +83,3 @@ AI-Study-Assistant
 
 ## Author
 Sivani Sahitya Palla
-GitHub: https://github.com/pallasahitya
